@@ -1,0 +1,56 @@
+# This will be how basil knows a message is directed to him in group
+# chats. Messages must be prefixed using "@me ", "me, " or similar.
+me: basil
+
+# This is the server type who's run method will be called. See
+# ./lib/basil/servers/ for their definitions. Valid values at this time
+# are :cli or :skype.
+server_type: :cli
+
+# This is the directory from which plugins are loaded. There can be one
+# or more plugins per file and additional classes/logic may be present
+# to support the contained plugins.
+plugins_directory: ./plugins
+
+# Where basil will persist data. This file is created on-demans.
+pstore_file: ./basil.pstore
+
+# Required only on OSX and ruby 1.9 for https requests to work (JIRA).
+# Install curl-ca-bundle via ports. The get_* utilities will use this
+# cert file for secure requests if the configuration option is present.
+#https_cert_file: /opt/local/share/curl/curl-ca-bundle.crt
+
+# Constants for the Jenkins API plugin.
+jenkins:
+  host:     jenkins1.ideeli.com
+  port:     80
+  user:     X
+  password: X
+
+# Constants for the Jira API plugin.
+jira:
+  host:     jira.ideeli.com
+  port:     443
+  user:     X
+  password: X
+
+# Constants for the Airbrake API
+airbrake:
+  account: ideeli
+  project: SomeNumber   # https://ideeli.airbrakeapp.com/<project>/errors
+  token:   SomeLongHash # get from Settings
+
+# Constants for email checking
+email:
+  server:   imap.gmail.com
+  port:     993
+  username: X
+  password: X
+  inbox:    INBOX
+
+# Constants for the twitter plugin
+twitter:
+  consumer_key:       xxx
+  consumer_secret:    xxx
+  oauth_token:        xxx
+  oauth_token_secret: xxx

@@ -1,0 +1,10 @@
+coverage
+rdoc
+doc
+.yardoc
+.bundle
+pkg
+config/basil.yml
+*.pstore
+.rbenv-version
+.rvmrc
