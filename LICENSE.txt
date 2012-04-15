@@ -1,3 +1,6 @@
+Modifications for RefUtd hack: Craig Snowden
+
+Original version of Basil:
 Copyright (c) 2011 patrick brisbin
 
 Permission is hereby granted, free of charge, to any person obtaining
